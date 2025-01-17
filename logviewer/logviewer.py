@@ -36,12 +36,12 @@ class Logviewer(commands.Cog, name=__plugin_name__):
         self.db = self.bot.plugin_db.get_partition(self)
         self.config = None
         self.default_config = {
-            "log_url": "http://localhost:9789",
+            "log_url": "http://localhost:3030",
             "oauth2_client_id": None,
             "oauth2_client_secret": None,
             "oauth2_redirect_uri": None,
             "host": "0.0.0.0",
-            "port": 9789,
+            "port": 3030,
             "log_url_prefix": "/logs",
             "pagination": 25,
             "ssl_cert_path": None,
